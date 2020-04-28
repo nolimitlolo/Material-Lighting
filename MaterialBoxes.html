@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <meta charset="utf-8" />
+ <!-- 
+ ==========================================================================
+ $Id: MaterialBoxes.html,v 1.2 2019/03/09 18:15:33 jlang Exp $
+ Simple html page to experiment with WebGL2 
+ ==========================================================================
+ (C)opyright:
+
+   Jochen Lang
+   EECS, University of Ottawa
+   800 King Edward Ave.
+   Ottawa, On., K1N 6N5
+   Canada.
+   http:www.eecs.uottawa.ca
+
+ Creator: jlang (Jochen Lang)
+ Email:   jlang@uottawa.ca
+ ==========================================================================
+ $Log: MaterialBoxes.html,v $
+ Revision 1.2  2019/03/09 18:15:33  jlang
+ Included solution and starter code.
+
+ Revision 1.1  2019/03/08 22:42:43  jlang
+ First draft of material lab
+
+ ========================================================================== 
+-->
+<html
+ lang="en">
+  <head>
+    <title>Assignement 3</title>
+    <style>
+        body {
+            /* set margin to 0 and overflow to hidden, to go fullscreen */
+            /* margin: 0; */
+            overflow: hidden;
+			background-color: #175d7e;
+			color: #cccccc;
+        }
+		a:link {
+			color: #33ccff;
+		}	
+		a:visited {
+			color: #ccffff;
+		}
+    </style>
+</head>
+  <body onload="main()">
+    <h1>Instances of Lit Boxes with Materials</h1>
+    <P>
+      The code is heavily based on
+      the <span style="text-decoration: underline;font-weight:bold;">
+	<font color="#ff0000">WebGL Programming
+     Guide</font></b></span> by <span style="text-decoration:
+     underline;font-weight: bold;">Kouichi Matsuda and Rodger
+     Lea</span>. You can find more information about the book and the
+     source code on their <span style="font-weight: bold;">
+     <A href="https://sites.google.com/site/webglbook/">webpage</A></span>. The
+     code posted here is with the generours permission by the authors. 
+    </P>
+	<P>
+	This demo uses a VAO, UBO, array attributes and instanced rendering in webGL 2
+	</P>
+    <canvas id="webgl" width="512" height="512">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <hr width="100%">     
+    <table>
+      <tbody>
+	<tr>
+	  <td>
+	    Use up/down arrows to change speed.
+	  </td>
+	  <td>
+	    <button type="button" onclick="setDefault()">reset</button>
+	  </td>
+	</tr>
+	<tr>
+	  <td style="text-align:right">
+	    <button type="button" onclick="faster()">faster</button>
+	  </td>
+	  <td>
+	    <button type="button" onclick="slower()">slower</button>
+	  </td>
+	</tr>	
+  </tbody>
+    </table>
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../../node_modules/gl-matrix/gl-matrix.js"></script>
+    <script src="../../node_modules/dat.gui/build/dat.gui.js"></script>
+    <script src="Attributes.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="RenderShape.js"></script>
+    <script src="Light.js"></script>
+    <script src="Material.js"></script>
+    <script src="MaterialBoxes.js"></script>
+</P>
+<P>
+  <hr width="100%"> 
+</br>
+&copy; <a href="https://www.site.uottawa.ca/~jlang/">Jochen Lang</a> 
+</body>
+</html>
+</P>
+  </body>
+</html>
